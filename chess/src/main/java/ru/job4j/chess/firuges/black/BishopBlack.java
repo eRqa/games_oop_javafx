@@ -23,7 +23,7 @@ public class BishopBlack implements Figure {
                     String.format("Could not move by diagonal from %s to %s", position, dest)
             );
         };
-        int size = dest.x - this.position.x;
+        int size = Math.abs(dest.x - this.position.x);
         Cell[] steps = new Cell[size];
         int indexX = position.x;
         int indexY = position.y;
